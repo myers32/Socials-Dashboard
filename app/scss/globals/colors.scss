@@ -1,40 +1,40 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
+
+  // ###Primary
+
+  --limegreen: hsl(163, 72%, 41%);
+  --brightred: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --youtube: hsl(348, 97%, 39%);
+
+  // Dark Theme
+
+  --darktoggle: linear-gradient(to right, #378fe6,  #3eda82);
+
+  // Light Theme
+
+  --lighttoggle: hsl(230, 22%, 74%);
+
+  // ______________________
+
+  // ###Neutral
+
+  // Dark Theme
+
+  --verydarkblue-bg: hsl(230, 17%, 14%);
+  --verydarkblue-top-bg: hsl(232, 19%, 15%);
+  --card-background: hsl(228, 28%, 20%);
+  --darktheme-text: hsl(228, 34%, 66%);
+
+  // Light Theme
+
+  --white-bg: hsl(0, 0%, 100%);
+  --verypaleblue-top-bg: hsl(225, 100%, 98%);
+  --light-card-background: hsl(227, 47%, 96%);
+  --lighttheme-text: hsl(228, 12%, 44%);
+  --lighttheme-darktext: hsl(230, 17%, 14%);
 }
-
-// ###Primary
-
-$limegreen: hsl(163, 72%, 41%);
-$brightred: hsl(356, 69%, 56%);
-$facebook: hsl(208, 92%, 53%);
-$twitter: hsl(203, 89%, 53%);
-$instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
-$youtube: hsl(348, 97%, 39%);
-
-// Dark Theme
-
-$darktoggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
-
-// Light Theme
-
-$lighttoggle: hsl(230, 22%, 74%);
-
-// ______________________
-
-// ###Neutral
-
-// Dark Theme
-
-$verydarkblue-bg: hsl(230, 17%, 14%);
-$verydarkblue-top-bg: hsl(232, 19%, 15%);
-$card-background: hsl(228, 28%, 20%);
-$darktheme-text: hsl(228, 34%, 66%);
-
-// Light Theme
-
-$white-bg: hsl(0, 0%, 100%);
-$verypaleblue-top-bg: hsl (225, 100%, 98%);
-$light-card-background: hsl(227, 47%, 96%);
-$lighttheme-text: hsl(228, 12%, 44%);
-$lighttheme-darktext: hsl(230, 17%, 14%);

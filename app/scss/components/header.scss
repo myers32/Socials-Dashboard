@@ -1,0 +1,81 @@
+@use "../util" as u;
+
+.header {
+  &__container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: var(--verypaleblue-top-bg);
+    border-radius: 0 0 20px 20px;
+
+    &--text {
+      padding-bottom: 20px;
+      border-bottom: 1px solid grey;
+      p {
+        padding-top: 5px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--lighttheme-text);
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+
+    &--toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.25rem;
+
+      p {
+        padding-top: 5px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--lighttheme-text);
+      }
+    }
+  }
+}
+
+.themeSwitch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--lighttoggle);
+  transition: all 400ms ease-in-out;
+  border-radius: 30px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 19px;
+  width: 20px;
+  left: 26px;
+  bottom: 4px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: 400ms;
+}
+
+input:checked + .slider {
+  background: var(--darktoggle);
+}
+
+input:checked + .slider::before {
+  transform: translateX(-22px);
+}
