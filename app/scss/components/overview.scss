@@ -5,6 +5,10 @@
   }
 
   &__text {
+    @include u.breakpoint-up(large) {
+      padding-top: 50px;
+    }
+
     h2 {
       color: var(--lighttheme-text);
       font-size: 26px;
@@ -12,6 +16,14 @@
   }
 
   &__cards {
+    
+    @include u.breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
   }
 
   &__card {
