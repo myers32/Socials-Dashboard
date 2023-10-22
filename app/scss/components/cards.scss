@@ -1,16 +1,38 @@
 @use "../util" as u;
 
 .cards {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: var(--verypaleblue-top-bg);
+    border-radius: 0 0 30px 30px;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+  }
+
   &__container {
     position: relative;
     top: -4.375rem;
+
+    @include u.breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 1.25rem;
+      top: 0;
+      padding-top: 20px;
+    }
   }
+
   &__facebook {
     border-top: 0.25rem solid var(--facebook);
   }
+
   &__twitter {
     border-top: 0.25rem solid var(--twitter);
   }
+
   &__instagram {
     position: relative;
 
@@ -24,6 +46,7 @@
       border-radius: 100%;
     }
   }
+
   &__youtube {
     border-top: 0.25rem solid var(--youtube);
   }
@@ -35,6 +58,10 @@
     background-color: var(--light-card-background);
     border-radius: 0.3125rem;
     box-shadow: 0rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.2);
+
+    @include u.breakpoint-up(large) {
+      margin: 0;
+    }
 
     &--logo {
       display: flex;
