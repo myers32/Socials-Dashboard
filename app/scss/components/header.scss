@@ -1,15 +1,27 @@
 @use "../util" as u;
 
 .header {
+  background-color: var(--verypaleblue-top-bg);
+
   &__container {
     padding-top: 2.5rem;
     padding-bottom: 5.625rem;
-    background-color: var(--verypaleblue-top-bg);
-    border-radius: 0 0 35px 35px;
+
+    @include u.breakpoint-up(large) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0;
+    }
 
     &--text {
       padding-bottom: 20px;
       border-bottom: 1px solid grey;
+
+      @include u.breakpoint-up(large) {
+        border: none;
+      }
+
       p {
         padding-top: 5px;
         font-size: 0.75rem;
@@ -27,6 +39,11 @@
       justify-content: space-between;
       align-items: center;
       padding-top: 1.25rem;
+
+      @include u.breakpoint-up(large) {
+        gap: 20px;
+        padding: 0;
+      }
 
       p {
         padding-top: 5px;
