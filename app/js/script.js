@@ -1,5 +1,12 @@
-console.log('HELLO');
+{
+  const toggle = () => {
+    const toggleButton = document.querySelector(".theme-toggle");
+    const body = document.querySelector("body");
 
-const test = () => {
-	console.log('this is a test');
-};
+    toggleButton.addEventListener("click", () => {
+      body.classList.toggle("dark-theme");
+    });
+  };
+
+  toggle();
+}
