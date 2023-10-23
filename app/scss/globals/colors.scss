@@ -38,4 +38,14 @@
   --light-card-backgroundhover: hsl(227, 30%, 88%);
   --lighttheme-text: hsl(228, 12%, 44%);
   --lighttheme-darktext: hsl(230, 17%, 14%);
+  --headercolor: hsl(0, 0%, 0%);
+}
+
+:root .dark-theme {
+  --white-bg: hsl(230, 17%, 14%);
+  --verypaleblue-top-bg: hsl(232, 19%, 15%);
+  --light-card-background: hsl(228, 28%, 20%);
+  --light-card-backgroundhover: hsl(227, 30%, 88%);
+  --headercolor: hsl(0, 0%, 100%);
+  --light-card-backgroundhover: hsl(227, 28%, 31%);;
 }
