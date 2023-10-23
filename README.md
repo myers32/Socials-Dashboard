@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Design](![desktop-preview](https://github.com/myers32/Socials-Dashboard/assets/122280628/eba5a27d-68ec-44c4-ba4b-2e02185e3d87))
+![Design]![desktop-preview](https://github.com/myers32/Socials-Dashboard/assets/122280628/eba5a27d-68ec-44c4-ba4b-2e02185e3d87)
 
 ### Links
 
