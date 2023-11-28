@@ -1,4 +1,4 @@
-# Frontend Mentor - Social media dashboard with theme switcher solution
+# Social media dashboard with theme switcher - Frontend Mentor solution
 
 This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor] 
 
